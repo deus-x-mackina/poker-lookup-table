@@ -16,7 +16,7 @@ fn main() -> Result<()> {
     write!(
         &mut file,
         "use crate::{{evaluate::{{hand_rank::PokerHandRank, meta::Meta::{{self, *}}}}, \
-         Rank::*}};\n\nstatic FLUSH_LOOKUP: ::phf::Map<i32, Meta> = "
+         Rank::*}};\n\npub static FLUSH_LOOKUP: ::phf::Map<i32, Meta> = "
     )?;
     let mut builder = &mut phf_codegen::Map::new();
     for (&key, &value) in table.flush_lookup.iter() {
@@ -27,7 +27,7 @@ fn main() -> Result<()> {
     // Unsuited lookup
     write!(
         &mut file,
-        "static UNSUITED_LOOKUP: ::phf::Map<i32, Meta> = "
+        "pub static UNSUITED_LOOKUP: ::phf::Map<i32, Meta> = "
     )?;
     let mut builder = &mut phf_codegen::Map::new();
     for (&key, &value) in table.unsuited_lookup.iter() {

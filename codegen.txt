@@ -1,6 +1,6 @@
 use crate::{evaluate::{hand_rank::PokerHandRank, meta::Meta::{self, *}}, Rank::*};
 
-static FLUSH_LOOKUP: ::phf::Map<i32, Meta> = ::phf::Map {
+pub static FLUSH_LOOKUP: ::phf::Map<i32, Meta> = ::phf::Map {
     key: 12913932095322966823,
     disps: &[
         (0, 569),
@@ -1553,7 +1553,7 @@ static FLUSH_LOOKUP: ::phf::Map<i32, Meta> = ::phf::Map {
     ],
 };
 
-static UNSUITED_LOOKUP: ::phf::Map<i32, Meta> = ::phf::Map {
+pub static UNSUITED_LOOKUP: ::phf::Map<i32, Meta> = ::phf::Map {
     key: 12913932095322966823,
     disps: &[
         (0, 1),
