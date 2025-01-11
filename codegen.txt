@@ -8971,7 +8971,7 @@ pub static UNSUITED_LOOKUP_FIVE: ::phf::Map<i32, Eval<crate::evaluate::poker_typ
     ],
 };
 
-pub static FLUSH_LOOKUP_THREE: ::phf::Map<i32, Eval<crate::evaluate::poker_type::FiveCard>> = ::phf::Map {
+pub static FLUSH_LOOKUP_THREE: ::phf::Map<i32, Eval<crate::evaluate::poker_type::ThreeCard>> = ::phf::Map {
     key: 12913932095322966823,
     disps: &[
         (0, 156),
@@ -9323,7 +9323,7 @@ pub static FLUSH_LOOKUP_THREE: ::phf::Map<i32, Eval<crate::evaluate::poker_type:
     ],
 };
 
-pub static UNSUITED_LOOKUP_THREE: ::phf::Map<i32, Eval<crate::evaluate::poker_type::FiveCard>> = ::phf::Map {
+pub static UNSUITED_LOOKUP_THREE: ::phf::Map<i32, Eval<crate::evaluate::poker_type::ThreeCard>> = ::phf::Map {
     key: 12913932095322966823,
     disps: &[
         (0, 50),

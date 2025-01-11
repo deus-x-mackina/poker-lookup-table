@@ -42,7 +42,7 @@ fn main() -> Result<()> {
     // Flush lookup (3 card)
     write!(
         &mut file,
-        "pub static FLUSH_LOOKUP_THREE: ::phf::Map<i32, Eval<crate::evaluate::poker_type::FiveCard>> = "
+        "pub static FLUSH_LOOKUP_THREE: ::phf::Map<i32, Eval<crate::evaluate::poker_type::ThreeCard>> = "
     )?;
     let mut builder = &mut phf_codegen::Map::new();
     for (&key, &value) in three.flush_lookup.iter() {
@@ -53,7 +53,7 @@ fn main() -> Result<()> {
     // Unsuited lookup (5 card)
     write!(
         &mut file,
-        "pub static UNSUITED_LOOKUP_THREE: ::phf::Map<i32, Eval<crate::evaluate::poker_type::FiveCard>> = "
+        "pub static UNSUITED_LOOKUP_THREE: ::phf::Map<i32, Eval<crate::evaluate::poker_type::ThreeCard>> = "
     )?;
     let mut builder = &mut phf_codegen::Map::new();
     for (&key, &value) in three.unsuited_lookup.iter() {
